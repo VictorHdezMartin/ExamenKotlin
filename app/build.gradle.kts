@@ -45,6 +45,7 @@ dependencies {
     val retroFitVersion = "2.11.0"
     implementation("com.squareup.retrofit2:retrofit:$retroFitVersion")                              // RetroFit
     implementation("com.squareup.retrofit2:converter-gson:$retroFitVersion")                        // Gson
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")                               // interceptor de llamada para RetroFit
 
 // dependencia PICASSO
     implementation("com.squareup.picasso:picasso:2.8")                                              // Picasso
