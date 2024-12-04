@@ -90,7 +90,7 @@ class PeliculasActivity : AppCompatActivity() {
             tituloTextView.text = pelicula.title
             anioTextView.text = pelicula.year
             sinopsisTextView.text = pelicula.plot
-            duracionTextView.text = pelicula.released
+            duracionTextView.text = pelicula.runtime
             directorTextView.text = pelicula.director
             generoTextView.text = pelicula.genre
             paisTextView.text = pelicula.country

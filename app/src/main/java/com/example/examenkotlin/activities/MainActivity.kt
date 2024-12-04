@@ -14,6 +14,7 @@ import com.example.examenkotlin.R
 import com.example.examenkotlin.adapters.MainAdapter
 import com.example.examenkotlin.data.PeliculaClass
 import com.example.examenkotlin.databinding.ActivityMainBinding
+import com.example.examenkotlin.utils.Constants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -76,7 +77,7 @@ class MainActivity : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                val result = service.PeliculaResponse(query)
+                val result = service.PeliculaResponse(query, Constants.tokenOMDBAPI)
 
                 CoroutineScope(Dispatchers.Main).launch {
                     if (result.response == "True") {
